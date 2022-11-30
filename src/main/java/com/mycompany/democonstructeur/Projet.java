@@ -9,9 +9,9 @@ package com.mycompany.democonstructeur;
  * @author khali
  */
 public class Projet {
-    String titre;
-    String description,responsable;
-    int duree; // entier naturel
+    private String titre; // accessible unique dans la classe (protégé de l'écriture externe)
+    private String description,responsable;
+    private int duree; // entier naturel
 
     public Projet(String titre, String description) {
         this.titre = titre;
@@ -35,8 +35,8 @@ public class Projet {
     ici on peut mettre plusieurs ligne
     de commentaire
     */
-    // méthode indépendente
-    public void sayhi()
+    // méthode indépendente sans droit visible => accéssible dans son package
+     void sayhi()
     {
     System.out.println("hello java");
     }

@@ -20,6 +20,7 @@ public class Test {
         pr=new Projet(); //initialisation
         Projet p2=new Projet("site web avocat", "site web de gestion des client Maitre Hichem");
          pr.sayhi();
+         //pr.titre="projet 1"; => innaccessible en déhors de la classe
          // p2.sayhi();
          Projet projet=new Projet("projet java comptable","projet compta plus","Amal", 20);
         System.out.println(p2.identite());
